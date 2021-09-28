@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="author" content="{{ page.author }}">
+  <link rel="stylesheet" href="/assets/stylesheet.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="main-navigation"> 
+    <nav class="categories">
+    <a href="/">Home</a> <a href="/journals.html">Journals and Conferences</a> <a href="/books.html">Book Chapters</a>
+    </nav> 
+  </div>
+    
+  <div class="sub-navigation">  
+  <h3>► {{ page.header }}</h3>
+  <nav class="years">
+  {% for year in years %}
+    <span><a href="#journals-{{ year }}">[{{ year }}]</a></span>
+  {% endfor %}
+  </nav>
+  </div>
+  </header>
+
+  <main>
+
+  {% for year in years %}
+
+  <div class="year"><a name="journals-{{ year }}" class="anchor"></a>{{ year }}</div>
+  <div class="publications">
+
+    {% for publication in publications[year] %}
+
+      <article>
+      <div class="title">{{ publication.title }}      
+        {% if publication.pdf_file is not in "" %}
+      <span><a href="{{ publication.pdf_file }}">[pdf]</a></span>
+      {% endif %}
+      </div>
+      <div class="authors">{{ publication.authors }}</div>
+      <div class="publication">IN: {{ publication.publication }}</div>
+      {% if publication.doi_link is not in "" %}
+      <div class="doi"><a href="{{ publication.doi_link }}">DOI: {{ publication.doi_link }}</a></div>
+      {% endif %}
+      </article>
+      
+    {% endfor %}
+  </div>
+
+  {% endfor %}
+
+  </main>
+
+</body>
+
+</html>

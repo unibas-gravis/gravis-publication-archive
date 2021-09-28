@@ -1,0 +1,71 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+  hyphens: auto;
+  height: 100%;
+  margin:  0;
+  padding:  0;
+}
+
+header {
+  position: sticky;
+  top:  0;
+  right:  1em;
+  padding:  0.2em 1em;
+  background-color: white;
+  z-index: 1;
+}
+
+.anchor {
+    padding-top: 10em;
+    margin-top: -10em;
+}
+
+.main-navigation {
+  padding: 0.5em 0;
+  //font-size: 1.2em;
+}
+
+.main-navigation > nav {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.sub-navigation {
+  margin-top: 1em;
+}
+
+.sub-navigation > nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+main {
+  margin-left: 2em;
+  position: relative;
+  top:  2.5em;
+  padding-bottom: 2em;
+}
+
+.year {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.publications {
+  margin: 1em;
+  border-left: solid 2px;
+}
+
+article {
+  padding: 1em;
+}
+
+.title {
+  font-weight: bold;
+}
+
