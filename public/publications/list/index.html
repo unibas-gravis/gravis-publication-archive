@@ -1,0 +1,301 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html >
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="Author" content="Sami Romdhani">
+    <meta name="GENERATOR" content="Mozilla/4.5C-SGI [en] (X11; I; IRIX 6.5 IP32) [Netscape]">
+    <title>Pose and Illumination Invariant Face Recognition </title>
+  </head>
+  
+  <body text="#111111" bgcolor="#DDDDDD" link="#990000" vlink="#990000" alink="#333333">
+    <font face="Arial,Helvetica">
+      <font size=-1>
+	<a href="../../index.html">Home</a>&nbsp;
+	<a href="../../people.html">People</a>&nbsp;
+	<a href="../../contact.html">Contact</a>&nbsp;
+	<a href="../../projects.html">Research</a>&nbsp;
+	<a href="../../publication.html">Publications</a>&nbsp;
+	<a href="../../teaching.html">Teaching</a>&nbsp; 
+	<a href="../../jobs.html">Jobs</a>
+      </font><br><br>
+    <hr NOSHADE align="Left" WIDTH="630">
+    <br>
+    
+    <font size=+1><b>
+	Face Identification by Fitting a 3D Morphable Model <br>
+	using Linear Shape and Texture Error Functions
+      </b></font>
+    <br><br>
+    <b>
+      <a HREF="http://gravis.dmi.unibas.ch/people/romdhani">Sami Romdhani</a>,
+      <a HREF="http://gravis.dmi.unibas.ch/people/volker/volker.html">Volker Blanz</a>  and 
+      <a HREF="http://gravis.dmi.unibas.ch/people/vetter/vetter.html">Thomas Vetter</a> </b><br><br>
+    <img src="tri.gif"> Adobe Portable Document Format 
+    (<a href="romdhani_eccv02.pdf">pdf</a>) [800k]<br>
+    <img src="tri.gif"> Compressed Postscript 
+    (<a href="romdhani_eccv02.ps.gz">ps.gz</a>) [561k]<br>
+    <img src="tri.gif"> Powerpoint Presentation 
+    (<a href="romdhani_eccv02.ppt">.ppt</a>) [1.6M]<br>
+    <br>
+    <table  width=630>
+      <tr>
+	<td>
+	  <b>Abstract:</b><br>
+	  This paper presents a novel algorithm aiming at analysis and
+	  identification of faces viewed from different poses and illumination
+	  conditions. Face analysis from a single image is performed by
+	  recovering the shape and textures parameters of a 
+	  <a href="../../Sigg99.html">3D Morphable Model</a> 
+	  in an analysis-by-synthesis fashion. The shape parameters
+	  are computed from a shape error estimated by optical flow and
+	  the texture parameters are obtained from a texture error. The
+	  algorithm uses linear equations to recover the shape and texture
+	  parameters irrespective of pose and lighting conditions of the
+	  face image.  Identification experiments are reported on more
+	  than 5000 images from the publicly available 
+	  <a href="http://www.ri.cmu.edu/projects/project_418.html">
+	  CMU-PIE face image database</a>
+	  which includes faces viewed from 13 different poses and under 22
+	  different illuminations.  <a href="index.html#id_res">Extensive identification results</a> are
+	  available for future comparison with novel algorithms.
+	  <br><br><center>
+	    <table>
+	      <tr><td><center><img src="webimg.jpg"></center></td></tr>
+	      <tr><td><font size=-1>
+		    <b>Identification of a face viewed from any pose and illuminated from
+		      any direction</b>:<br>
+		    <b>1.</b> Initialisation with a pose and a light direction estimate.<br>
+		    <b>2.</b> Model Fitting using our novel algorithm called <b>LiST</b>. Accurate
+		    pose, light and individuality parameters (3D shape and texture) 
+		    are recovered.<br>
+		    <b>3.</b> Using the recovered parameters a synthetic face can be generated.<br>
+		    <b>4.</b> Recognition is performed using the identity parameters computed at 
+		    step 2.
+		  </font></td></tr>
+	    </table>
+	</td>
+      </tr>
+    </table>
+    <hr NOSHADE align="Left" WIDTH="630">
+    <table  width=630>
+      <tr><td bgcolor="#cccccc" valign=top><b>Sponsor</b>:</td><td>
+	  <a href="http://www.darpa.mil/ito/research/hid/index.html">
+	    DARPA - HumanID at a distance program</a><br>
+	  European Research Office of the US Army</td></tr>
+      <tr><td bgcolor="#cccccc"><b>Grant</b>: </td><td>N68171-01-C-9000</td></tr>
+      <tr><td bgcolor="#cccccc"><b>Copyright</b>:</td><td> <a href="http://www.springer.de/comp/lncs/index.html">
+	    Springer-Verlag</a></td></tr>
+      <tr><td bgcolor="#cccccc" valign=top>
+	  <b>BibTeX</b></td><td><pre>
+@conference{RomBlaVet02,
+    author    = "Sami Romdhani and Volker Blanz and Thomas Vetter",
+    title     = "Face Identification by Fitting a 3D Morphable Model 
+                 using Linear Shape and Texture Error Functions",
+    booktitle = "Computer Vision -- ECCV'02",
+    address   = "Copenhagen, Denmark",
+    volume    = "4",
+    pages     = "3--19",
+    year      = 2002
+}</pre></td></tr>
+<!--    
+    editor    = "",
+    publisher = "Springer, Lecture Notes in Computer Science 1064",
+-->
+    </table>
+    <hr NOSHADE align="Left" WIDTH="630">
+    <br>
+    <a name="id_res">
+    <table  width=630>
+      <tr>
+	<td bgcolor="#cccccc">
+	  <b>Identification Results Files</b>
+	  </td>
+      </tr>
+      <tr>
+	<td>
+	  To enable a fair comparison of the identification
+	  performances obtained by LiST with other algorithms, we
+	  provide detailed identification results. The identification
+	  experiments reported here were performed on two portions of
+	  the
+	  <a href="http://www.ri.cmu.edu/projects/project_418.html">
+	  CMU-PIE face image database</a>: <b>1.</b> on the pose
+	  variation with ambient light portion (884 images) and
+	  <b>2.</b> on the combined pose and illumination variation
+	  (4488 images).
+
+	  <br><br> <b>Pose Variation:</b><br> This portion of the
+	  database contains 13 images for all 68 individual viewed from
+	  different poses. One identification experiments was
+	  performed by choosing one pose for the gallery set and the
+	  other poses for the probe set. Hence the gallery set
+	  contains a single image per individual. 13 identification
+	  experiments were carried out by choosing different poses for
+	  the gallery set. There is one identification result file per
+	  experiment. See the <a href="index.html#description_id_file">detailed
+	  description of the file format</a>, but briefly, the files
+	  contain one line per probe image. Each line begins by the
+	  tag of the probe individual and its pose number. Then
+	  follows a series of pairs of gallery individual tag and
+	  their distance from the probe. The list of gallery tag is
+	  ordered by their closeness to the probe.<br>
+	  <table align=center>
+	    <tr><td><b>Gallery pose</b></td><td><b>Identification Results Files</b></td></tr>
+	    <tr>
+	      <td align=center>2</td>
+	      <td align=center><a href="pose_gal_02.csv">pose_gal_02.csv</a></td>
+	    </tr>
+	    <tr>
+	      <td align=center>5</td>
+	      <td align=center><a href="pose_gal_05.csv">pose_gal_05.csv</a></td>
+	    </tr>
+	    <tr>
+	      <td align=center>7</td>
+	      <td align=center><a href="pose_gal_07.csv">pose_gal_07.csv</a></td>
+	    </tr>
+	    <tr>
+	      <td align=center>9</td>
+	      <td align=center><a href="pose_gal_09.csv">pose_gal_09.csv</a></td>
+	    </tr>
+	    <tr>
+	      <td align=center>11</td>
+	      <td align=center><a href="pose_gal_11.csv">pose_gal_11.csv</a></td>
+	    </tr>
+	    <tr>
+	      <td align=center>14</td>
+	      <td align=center><a href="pose_gal_14.csv">pose_gal_14.csv</a></td>
+	    </tr>
+	    <tr>
+	      <td align=center>22</td>
+	      <td align=center><a href="pose_gal_22.csv">pose_gal_22.csv</a></td>
+	    </tr>
+	    <tr>
+	      <td align=center>25</td>
+	      <td align=center><a href="pose_gal_25.csv">pose_gal_25.csv</a></td>
+	    </tr>
+	    <tr>
+	      <td align=center>27</td>
+	      <td align=center><a href="pose_gal_27.csv">pose_gal_27.csv</a></td>
+	    </tr>
+	    <tr>
+	      <td align=center>29</td>
+	      <td align=center><a href="pose_gal_29.csv">pose_gal_29.csv</a></td>
+	    </tr>
+	    <tr>
+	      <td align=center>31</td>
+	      <td align=center><a href="pose_gal_31.csv">pose_gal_31.csv</a></td>
+	    </tr>
+	    <tr>
+	      <td align=center>34</td>
+	      <td align=center><a href="pose_gal_34.csv">pose_gal_34.csv</a></td>
+	    </tr>
+	    <tr>
+	      <td align=center>37</td>
+	      <td align=center><a href="pose_gal_37.csv">pose_gal_37.csv</a></td>
+	    </tr>
+	  </table> <br>
+	  <b>Pose & Illumination Variation:</b><br>
+	  This portion of the database holds 66 images for all 68
+	  individual viewed from 3 poses and illuminated from 22
+	  directions. We made 3 experiments. The gallery sets
+	  contained one image per individual. The 3 gallery sets hold
+	  each a different pose. All the image of the gallery set were
+	  illuminated from direction number 12.<br>
+	  <br>
+	  There is one identification result file per experiment. See the
+	  <a href="index.html#description_id_file">
+	  detailed description of the file format</a>, but briefly,
+	  the files contain one line per probe image. Each line begins
+	  by the tag of the probe individual its pose number and the
+	  flash light number. Then follows a series of pairs of
+	  gallery individual tag and their distance from the
+	  probe. The list of gallery tag is ordered by their closeness
+	  to the probe.<br>
+	  <table align=center>
+	    <tr><td><b>Gallery pose</b></td><td><b>Identification Results Files</b></td></tr>
+	    <tr>
+	      <td align=center>27 (front)</td>
+	      <td align=center><a href="light_gal_27_12.csv">light_gal_27_12.csv</a></td>
+	    </tr>
+	    <tr>
+	      <td align=center>5 (side)</td>
+	      <td align=center><a href="light_gal_05_12.csv">light_gal_05_12.csv</a></td>
+	    </tr>
+	    <tr>
+	      <td align=center>22 (profile)</td>
+	      <td align=center><a href="light_gal_22_12.csv">light_gal_22_12.csv</a></td>
+	    </tr>
+	  </table><br> <a name="description_id_file"><b>Description of
+	  the Identification Result File:</b></a><br> An Identification
+	  Result File stores the results of an identification experiment.
+	  There is one line per probe image. Each line has two parts. The
+	  first part pertain to the probe image, the second part lists
+	  the gallery images along with their distance from the probe
+	  image. The list of gallery image is ordered by their closeness
+	  to the probe.<br>
+	  <b>The probe part</b> varies depending on the type of experiment: 
+	  <ul>
+	    <li>For pose-only experiements, the probe part is composed
+	    of the individuality number and the camera number (i.e. the
+	    pose number):<pre>
+&lt;id number&gt;, &lt;camera number&gt;</pre>
+	    <li>For pose and illumination experiments, the probe part
+	    is composed of the individuality number, the camera number and the flash number:<pre>
+&lt;id number&gt;, &lt;camera number&gt;, &lt;flash number&gt;</pre>
+	  </ul>
+	  <b>The gallery part</b> is a list of id - distance pair:<pre>
+&lt;id number&gt;, &lt;distance&gt;, ..., &lt;id number&gt;, &lt;distance&gt;</pre>
+
+	  We chose the Comma Separated Values (<a
+	  href="http://www.myfileformats.com">CSV</a>) file format because
+	  it is a human readable format and supported by a large range
+	  of software including Matlab, MS Excel, Gnumeric, Star
+	  Office and any spreadsheet tool. Each Identification Result
+	  File contains a header of 11 lines describing briefly its
+	  content.
+	  <br><br>
+	  <img src="tri.gif"> Download all 16 experiments as a compressed file 
+	  (<a href="list_irf.tar.gz">.tar.gz</a>) [5.0M]
+	</td></tr>
+    </table>
+    <br>
+    <hr NOSHADE align="Left" WIDTH="630">
+    <br>
+    <a name="id_res">
+    <table  width=630>
+      <tr><td bgcolor="#cccccc">
+	  <b>Other papers reporting results on the PIE face image database</b>
+	</td></tr>
+      <tr><td>
+	  <b>From our group</b>:<p>
+	    Face Identification across different Poses and Illuminations 
+	    with a 3D Morphable Model<br>
+	    <em>Volker Blanz, Sami Romdhani, and Thomas Vetter</em><br>
+	    <em>Proceedings of the IEEE International Conference on Automatic 
+	    Face and Gesture Recognition, 2002.</em><br>
+	    <a href="http://gravis.dmi.unibas.ch/people/romdhani/sgd_fg02.pdf">pdf</a> [585k],
+	    <a href="http://gravis.dmi.unibas.ch/people/romdhani/sgd_fg02.ps.gz">ps.gz</a> [1.1M],<p>
+	    <b>From CMU</b>:<p>
+	  <a href="http://www.ri.cmu.edu/projects/project_455.html">
+	    Eigen Light-Fields and Face Recognition across Pose</a><br>
+	  <em>Ralph Gross, Iain Matthews, and Simon Baker</em><br>
+	  <em>Proceedings of the IEEE International Conference on Automatic 
+	  Face and Gesture Recognition, May, 2002</em><p>
+
+	    <a href="http://www.ri.cmu.edu/pubs/pub_3849.html">Quo Vadis Face Recognition ?</a><br>
+	    <em>Ralph Gross, Jianbo Shi, and Jeffrey Cohn</em><br>
+	    <em>Third Workshop on Empirical Evaluation Methods in Computer Vision, 
+	      December, 2001.</em><p> 
+	  
+	</td></tr>
+    </table>
+    <br>
+    <hr NOSHADE align="Left" WIDTH="630">
+    <address><a href="mailto:romdhani@informatik.uni-freiburg.de">Sami Romdhani</a></address>
+    <!-- Created: Sun Feb 24 15:32:56 CET 2002 -->
+    <!-- hhmts start -->
+Last modified: Wed May 22 13:52:00 CEST 2002
+<!-- hhmts end -->
+    </font>
+  </body>
+</html>

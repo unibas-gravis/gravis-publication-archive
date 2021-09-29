@@ -1,0 +1,303 @@
+
+
+
+
+<head>
+<title>Automotive Shape Modeling</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="uni.css">
+ <link REL="shortcut icon" HREF="images/face.gif">
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" onLoad="MM_preloadImages('images/menu_people_over.gif','images/menu_projects_over.gif','images/menu_teaching_over.gif','images/menu_publ_over.gif','images/menu_contact_over.gif','images/menu_jobs_over.gif')"vlink="#9E6F3D" alink="#9E6F3D" link="#9E6F3D">
+<table width="741" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#FFFFFF"> 
+    <td colspan="3" width="741"><img src="images/blank.gif" width="1" height="10"></td>
+  </tr>
+  <tr> 
+    <td rowspan="7"   width="10"><img src="images/blank.gif" width="10" height="1"></td>
+    <td rowspan="7" bgcolor="#333333" width="1"><img src="images/blank.gif" width="1" height="1"></td>
+
+    <td width="730" bgcolor="#333333"> 
+      <table width="730" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="5"><img src="images/blank.gif" width="5" height="20"></td>
+          <td class="verd11" width="28"><a href="http://informatik.unibas.ch/" target="_top"><img src="images/csd.gif" width="186" height="16" border="0"></a></td>
+          
+        </tr>
+      </table>
+    </td>
+  
+ </tr>
+  <tr>
+
+    <td width="730" bgcolor="#000000"><img src="images/blank.gif" width="1" height="1"></td>
+ 
+ </tr>
+
+ <td width="730" bgcolor="#000000"> 
+      <table width="730" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="66"><img src="images/headneu1.jpg" width="660" height="62"></td>
+          <td class="verd11" width="70"><a href="http://www.unibas.ch/" target="_top"><img src="images/unibas.jpg" width="70" height="62" border="0"></a></td>
+          
+        </tr>
+      </table>
+    </td>
+
+
+
+  <tr> 
+    <td width="730" >                 <img src="images/blank.gif" width="1" height="1"></td>
+  </tr>
+  <tr> 
+    <td width="730" bgcolor="#333333"><img src="images/blank.gif" width="1" height="1"></td>
+  </tr>
+  <tr> 
+    <td width="730" bgcolor="#CCCCCC"> 
+      <table width="730" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td width="24" bgcolor="#BE9F6D">&nbsp;</td>
+	  <td width="82" bgcolor="#BE9F6D"><a href="../../../index.html"  onClick="MM_nbGroup('down','group1','menu_home','images/menu_home_over.gif',1)" onMouseOver="MM_nbGroup('over','menu_home','images/menu_home_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/menu_home.gif" width="52" height="15" name="menu_home" border="0" onLoad="" alt="Home"></a></td>
+
+          <td width="82" bgcolor="#BE9F6D"><a href="../../../people.html" onClick="MM_nbGroup('down','group1','menu_people','images/menu_people_over.gif',1)" onMouseOver="MM_nbGroup('over','menu_people','images/menu_people_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/menu_people.gif" width="56" height="15" name="menu_people" border="0" onLoad="" alt="People"></a></td>
+
+          <td width="97" bgcolor="#BE9F6D"><a href="../../../projects.html"  onClick="MM_nbGroup('down','group1','menu_projects','images/menu_projects_over.gif',1)" onMouseOver="MM_nbGroup('over','menu_projects','images/menu_projects_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/menu_projects.gif" width="68" height="15" name="menu_projects" border="0" onLoad="" alt="Projects"></a></td>
+
+          <td width="96" bgcolor="#BE9F6D"><a href="../../../teaching.html"  onClick="MM_nbGroup('down','group1','menu_teaching','images/menu_teaching_over.gif',1)" onMouseOver="MM_nbGroup('over','menu_teaching','images/menu_teaching_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/menu_teaching.gif" width="67" height="15" name="menu_teaching" border="0" onLoad="" alt="Teaching"></a></td>
+          <td width="114" bgcolor="#BE9F6D"><a href="../../../publications.html" onClick="MM_nbGroup('down','group1','menu_publ','images/menu_publ_over.gif',1)" onMouseOver="MM_nbGroup('over','menu_publ','images/menu_publ_over.gif','',1)" onMouseOut="MM_nbGroup('out')" ><img src="images/menu_publ_over.gif" width="87" height="15" name="menu_publ" border="0" onLoad="" alt="Publications"></a></td>
+          <td width="88" bgcolor="#BE9F6D"><a href="../../../contact.html"  onClick="MM_nbGroup('down','group1','menu_contact','images/menu_contact_over.gif',1)" onMouseOver="MM_nbGroup('over','menu_contact','images/menu_contact_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/menu_contact.gif" width="62" height="15" name="menu_contact" border="0" onLoad="" alt="Contact"></a></td>
+          <td width="223" bgcolor="#BE9F6D"><a href="../../../jobs.html"  onClick="MM_nbGroup('down','group1','menu_jobs','images/menu_jobs_over.gif',1)" onMouseOver="MM_nbGroup('over','menu_jobs','images/menu_jobs_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/menu_jobs.gif" width="52" height="15" name="menu_jobs" border="0" onLoad="" alt="Jobs"></a></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td width="730">&nbsp;</td>
+  </tr>
+</table>
+
+
+<!---------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="741" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td rowspan="4" width="10"><img src="images/blank.gif" width="10" height="1"></td>
+    <td rowspan="4" bgcolor="#333333" width="1"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="40"><img src="images/blank.gif" width="40" height="1"></td>
+    <td width="67"><a name="top"></a><font color="#FFFFFF">+</font></td>
+    <td width="102">&nbsp;</td>
+    <td width="15">&nbsp;</td>
+    <td width="506"><img src="images/blank.gif" width="1" height="60"></td>
+  </tr>
+  <tr> 
+    <td width="40" align="right"><a href="../../../publication.html"><img src="images/preilli.gif" width="16" height="9" border="0"></a></td>
+    <td width="67" valign="bottom"><img src="images/reihe.gif" width="67" height="13"></td>
+    <td width="623" class="verd12b" colspan="3"><font color="#000000">Example-Based Conceptual Styling Framework for Automotive Shapes</font><img src="images/blank.gif" width="1" height="1"></td>
+  </tr>
+  <tr> 
+    <td width="40"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="67"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="623" colspan="3" bgcolor="#666666"><img src="images/blank.gif" width="1" height="1"><img src="images/blank.gif" width="1" height="1"></td>
+  </tr>
+  <tr> 
+    <td width="40">&nbsp;</td>
+    <td width="67"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="102">&nbsp;</td>
+    <td width="15"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="506"><img src="images/blank.gif" width="1" height="1"></td>
+  </tr>
+</table>
+
+
+
+
+<table width="741" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td rowspan="2" width="10"><img src="images/blank.gif" width="10" height="1"></td>
+    <td rowspan="2" bgcolor="#333333" width="1"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="40"><img src="images/blank.gif" width="40" height="1"></td>
+    <td width="67">&nbsp;</td>
+    <td width="623" colspan="3" class="verd11"> <font color=#000000><span class="verd11b"><font color="#666666">References:</font></span></font><span class="verd11"><br>
+      </span><span class="verd11b"><b> </b>Example-Based Conceptual Styling Framework for Automotive Shapes <b></b>
+	  </span><span class="verd11"><br>  <b></b>István Kókai, Jörg Finger, Randall C. Smith, Richard Pawlicki, Thomas Vetter </span> 
+	  </span><span class="verd11"><br>  <b></b>EUROGRAPHICS Workshop on Sketch-Based Interfaces and Modeling (2007) </span>
+	   <span class="verd11b"><br><br> Downloads</span>
+	  <ul>
+	  <li><a href="SBIM07_Kokai.pdf">Full text in pdf</a></li>
+	  <li><a href="SBIM07_Kokai_Video.mp4">Video</a></li>
+	  <li><a href="SBIM07_Kokai_Slides_with_notes.pdf">Presentation slides</a></li>
+	  </ul>
+	  
+	  </td>
+  </tr>
+
+
+  <tr> 
+    <td width="40" align="right">&nbsp;</td>
+    <td width="67" valign="bottom">&nbsp;</td>
+    <td width="102" class="verd12b">&nbsp;</td>
+    <td width="15"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="506">&nbsp;</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+<table width="741" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td rowspan="2" width="10"><img src="images/blank.gif" width="10" height="1"></td>
+    <td rowspan="2" bgcolor="#333333" width="1"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="40"><img src="images/blank.gif" width="40" height="1"></td>
+    <td width="67"><img src="images/blank.gif" width="67" height="1"></td>
+    <td class="verd11"> 
+      <p><img src="SBIM07_Kokai.gif" width="400" height="300"><br> </p>
+      </td>
+    <td class="verd11" width="15"><img src="images/blank.gif" width="15" height="1"></td>
+    <td class="verd11" valign="top"> <span class="verd11b"><br>
+      Figure</span><span class="verd11"><br>
+     
+Using a sketch (upper left picture). Marked points on the
+sketch (upper left picture) provide the necessary constraints to create
+the 3D shape (third and fourthlower pictures).
+</span></td>
+  </tr>
+
+
+  <tr> 
+    <td width="40" align="right">&nbsp;</td>
+    <td width="67" valign="bottom">&nbsp;</td>
+    <td width="160" class="verd12b">&nbsp;</td>
+    <td width="15"><img src="images/blank.gif" width="1" height="1"></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<table width="741" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td rowspan="2" width="10"><img src="images/blank.gif" width="10" height="1"></td>
+    <td rowspan="2" bgcolor="#333333" width="1"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="40"><img src="images/blank.gif" width="40" height="1"></td>
+    <td width="67">&nbsp;</td>
+    <td class="verd11" colspan="6"> 
+      <p><span class="verd11b">Abstract</span><br> Conceptual design
+       in the automotive industry is a time-consuming
+       process. Iterations between concept sketches, created with
+       traditional two dimensional methods, and 3D digital
+       representations of a prototype are currently one of the big
+       bottlenecks. In this paper we present a framework for an
+       integrated 2D-3D design environment. The core of the framework
+       is a model representing the characteristic lines of automotive
+       shapes built from a set of example shapes. From every example
+       shape we extract the same set of characteristic lines and
+       represent them with a feature vector of deformation
+       gradients. Given a set of constraints, our method can generate
+       a new feature vector with an optimization procedure. We provide
+       examples for meaningful manipulations. We demonstrate that
+       these manipulations are intuitive and create plausible shapes.
+
+	    </p>
+      
+    </td>
+  </tr>
+  <tr> 
+    <td width="40" align="right">&nbsp;</td>
+    <td width="67" valign="bottom">&nbsp;</td>
+    <td width="623" class="verd12b" colspan="6"><img src="images/blank.gif" width="1" height="1"></td>
+  </tr>
+</table>
+
+
+
+
+<table width="741" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td rowspan="3" width="10"><img src="images/blank.gif" width="10" height="1"></td>
+    <td rowspan="3" bgcolor="#333333" width="1"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="40" align="right">&nbsp;</td>
+    <td width="67" valign="bottom">&nbsp;</td>
+    <td width="102" class="verd12b" valign="bottom"><a href="SBIM07_Kokai.html#top"><img src="images/preilob.gif" width="12" height="10" border="0"></a></td>
+    <td width="15"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="506">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="40"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="67"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="623" colspan="3" bgcolor="#666666"><img src="images/blank.gif" width="1" height="1"><img src="images/blank.gif" width="1" height="1"></td>
+  </tr>
+  <tr> 
+    <td width="40">&nbsp;</td>
+    <td width="67"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="102">&nbsp;</td>
+    <td width="15"><img src="images/blank.gif" width="1" height="1"></td>
+    <td width="506" valign="bottom" align="right"><img src="images/reiheunten.gif" width="43" height="23"></td>
+  </tr>
+</table>
+</body>
+</html>
