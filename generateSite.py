@@ -20,6 +20,8 @@ for pub_type in publication_types:
                 reader = csv.reader(input_file, delimiter=";")
                 for pub in reader:
                   entry = {"title": pub[1], "authors": pub[2], "publication": pub[3], "doi_link": pub[4], "pdf_file": pub[5]}
+                  if len(pub) > 6 :
+                    entry["extra"] = pub[6]
                   if pub[0] not in publications:
                         publications[pub[0]] = []
                   publications[pub[0]].append(entry) 
