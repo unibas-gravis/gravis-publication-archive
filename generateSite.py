@@ -24,11 +24,11 @@ for pub_type in publication_types:
                     entry["extra"] = pub[6]
                   if pub[0] not in publications:
                         publications[pub[0]] = []
-                  publications[pub[0]].append(entry) 
+                  publications[pub[0]].append(entry)
 
         output = template.render(page=page, publications=publications, years=sorted(publications)[::-1])
 
-        file_path_available = f"{Path(__file__).parent}/public/{pub_type['output']}"
+        file_path_available = f"{Path(__file__).parent}/docs/{pub_type['output']}"
         with open(file_path_available, "wb") as f:
           f.write(output.encode())
 
