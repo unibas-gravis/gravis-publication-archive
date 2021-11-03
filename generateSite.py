@@ -13,7 +13,7 @@ publication_types = [{"name": "Publications Journals and Conferences", "data": "
 
 for pub_type in publication_types:
 
-        page = {"title": pub_type["name"], "author": "gravis", "description": "publications at gravis", "header": pub_type["name"]}
+        page = {"title": pub_type["name"], "author": "gravis", "description": "publications at gravis", "header": pub_type["name"], "base_dir": "gravis-literature"}
         publications = {}
 
         with open(pub_type["data"], mode='r') as input_file:

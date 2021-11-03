@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -41,10 +42,14 @@
       <article>
       <div class="title">{{ publication.title }}      
         {% if publication.pdf_file is not in "" %}
-          <span><a href="{{ publication.pdf_file }}" download>[pdf]</a></span>
+          <span><a href="/{{ page.base_dir }}/{{ publication.pdf_file }}" download>[pdf]</a></span>
         {% endif %}
         {% if publication.extra %}
+          {% if publication.extra.startswith('http') %}
           <span><a href="{{ publication.extra }}">[more]</a></span>
+          {% else %}
+          <span><a href="/{{ page.base_dir }}/{{ publication.extra }}">[more]</a></span>
+          {% endif %}
         {% endif %}        
       </div>
       <div class="authors">{{ publication.authors }}</div>
